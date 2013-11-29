@@ -5,3 +5,8 @@ body {
 body {
   color: #000;
 }
+
+form button, form .button {
+  background-color: #aaa;
+  color: #fff;
+}
