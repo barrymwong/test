@@ -1,0 +1,25 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "description": "testing grunt",
+  "main": "index.js",
+  "scripts": {
+    "test": "test-command"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barrymwong/test"
+  },
+  "author": "Barry",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/barrymwong/test/issues"
+  },
+  "homepage": "https://github.com/barrymwong/test",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-sass": "~0.5.1"
+  }
+}
