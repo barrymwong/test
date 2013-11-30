@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "test-grunt",
   "version": "0.0.0",
   "description": "testing grunt",
   "main": "index.js",
@@ -21,6 +21,7 @@
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-uglify": "~0.2.7",
     "grunt-contrib-sass": "~0.5.1",
-    "grunt-contrib-watch": "~0.5.3"
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-notify": "~0.2.16"
   }
 }

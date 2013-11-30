@@ -9,6 +9,10 @@ body .footer {
   background-color: #000;
   color: #ebebeb;
 }
+body .content {
+  padding: 0px 10px;
+  margin: 10px 0px;
+}
 
 body {
   color: #000;
