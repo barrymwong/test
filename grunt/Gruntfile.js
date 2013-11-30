@@ -3,7 +3,6 @@ module.exports = function(grunt) {
 		coffee: {
 			compile: {
 				files: {
-					'Gruntfile.js': 'Gruntfile.coffee',
 					'js/scripts/script-concat.js': [
 						'js/coffee/script1.coffee',
 						'js/coffee/script2.coffee'
@@ -27,7 +26,7 @@ module.exports = function(grunt) {
 
 		concat: {
 			js: {
-				src: 'js/scripts/*.js',
+				src: 'js/scripts/script.js',
 				dest: 'js/app.js'
 			},
 			css: {
