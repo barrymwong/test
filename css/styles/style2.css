@@ -6,3 +6,10 @@ form button, form .button {
   background-color: #aaa;
   color: #fff;
 }
+form label {
+  display: inline-block;
+}
+form .error {
+  color: red;
+  border: 1px solid red;
+}

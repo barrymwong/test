@@ -7,4 +7,11 @@ form {
 		background-color: #aaa;
 		color: #fff;
 	}
+	label {
+		display: inline-block;
+	}
+	.error {
+		color: red;
+		border: 1px solid red;
+	}
 }
