@@ -1,4 +1,24 @@
-var hw = function(val) {
-	console.log(val);
-}
-hw();
+(function() {
+
+
+}).call(this);
+
+(function() {
+
+
+}).call(this);
+
+(function() {
+
+
+}).call(this);
+
+(function() {
+
+
+}).call(this);
+
+(function() {
+
+
+}).call(this);

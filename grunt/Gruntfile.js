@@ -1,5 +1,18 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
+		coffee: {
+			compile: {
+				files: {
+					'Gruntfile.js': 'Gruntfile.coffee',
+					'js/scripts/script-concat.js': [
+						'js/coffee/script1.coffee',
+						'js/coffee/script2.coffee'
+					],
+					'js/scripts/script-single.js': 'js/coffee/script.coffee'
+				}
+			}
+		},
+
 		sass: {
 			dist: {
 				options: {
@@ -43,9 +56,11 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-coffee');
 	grunt.loadNpmTasks('grunt-notify');
 
 	grunt.registerTask('dev', [
+		'coffee',
 		'sass',
 		'concat',
 		'watch'
