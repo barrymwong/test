@@ -1,6 +1,11 @@
 module.exports = function(grunt) {
+	grunt.loadNpmTasks("grunt-contrib-sass");
+	grunt.loadNpmTasks("grunt-contrib-concat");
+	grunt.loadNpmTasks("grunt-contrib-uglify");
+	grunt.loadNpmTasks("grunt-contrib-watch");
+
 	grunt.initConfig({
-		"sass": {
+		sass: {
 			dist: {
 				options: {
 					style: "expanded"
@@ -11,21 +16,32 @@ module.exports = function(grunt) {
 				}]
 			}
 		},
-		"concat": {
-			"js": {
-				"src": "js/scripts/*.js",
-				"dest": "js/app.js"
+
+		concat: {
+			js: {
+				src: "js/scripts/*.js",
+				dest: "js/app.js"
 			},
-			"css": {
-				"src": "css/styles/*.css",
-				"dest": "css/app.css"
+			css: {
+				src: "css/styles/*.css",
+				dest: "css/app.css"
+			}
+		},
+
+		watch: {
+			options: {
+				livereload: true,
+			},
+			js: {
+				files: ["js/scripts/*.js"],
+				tasks: ["concat:js"]
+			},
+			css: {
+				files: ["css/**/*.scss"],
+				tasks: ["sass", "concat:css"]
 			}
 		}
 	});
 
-	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks("grunt-contrib-concat");
-	grunt.loadNpmTasks("grunt-contrib-uglify");
-
-	grunt.registerTask("default", ["sass", "concat"]);
+	grunt.registerTask("dev", ["sass", "concat", "watch"]);
 };

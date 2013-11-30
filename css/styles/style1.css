@@ -1,3 +1,11 @@
 body {
   background-color: #ccc;
+  font: 14px helvetica, arial, sans-serif;
+}
+body .header {
+  background-color: #fff;
+}
+body .footer {
+  background-color: #000;
+  color: #ebebeb;
 }
