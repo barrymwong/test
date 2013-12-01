@@ -23,6 +23,8 @@
     "grunt-contrib-sass": "~0.5.1",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-contrib-coffee": "~0.7.0",
-    "grunt-notify": "~0.2.16"
+    "grunt-notify": "~0.2.16",
+    "connect": "~2.11.2",
+    "nodemon": "~0.7.10"
   }
 }

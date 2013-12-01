@@ -1,3 +1,2 @@
-### script1 ###
-alertFunc = (val) ->
+@alertFunc = (val) ->
 	alert val

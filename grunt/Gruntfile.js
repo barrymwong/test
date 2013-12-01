@@ -26,7 +26,7 @@ module.exports = function(grunt) {
 
 		concat: {
 			js: {
-				src: 'js/scripts/script.js',
+				src: 'js/scripts/*.js',
 				dest: 'js/app.js'
 			},
 			css: {
@@ -39,12 +39,16 @@ module.exports = function(grunt) {
 			options: {
 				livereload: true
 			},
+			coffee: {
+				files: 'js/coffee/*.coffee',
+				tasks: 'coffee'
+			},
 			js: {
-				files: ['js/scripts/*.js'],
-				tasks: ['concat:js']
+				files: 'js/scripts/*.js',
+				tasks: 'concat:js'
 			},
 			css: {
-				files: ['css/**/*.scss'],
+				files: 'css/**/*.scss',
 				tasks: ['sass', 'concat:css']
 			}
 		}

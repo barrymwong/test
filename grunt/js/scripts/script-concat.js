@@ -1,10 +1,5 @@
-/* script1*/
-
-
 (function() {
-  var alertFunc;
-
-  alertFunc = function(val) {
+  this.alertFunc = function(val) {
     return alert(val);
   };
 
