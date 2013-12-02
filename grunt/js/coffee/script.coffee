@@ -1,5 +1,12 @@
-@FirstCtrl = ($scope) ->
-	$scope.data = message: 'Hello', message2: 'Ni Hao'
+myApp = angular.module 'myApp', []
 
-@SecondCtrl = ($scope) ->
-	$scope.data = message: 'Hi'
+myApp.factory 'Data', ->
+	message: 'Hello Wrrld'
+
+@FirstCtrl = ($scope, Data) ->
+	$scope.data = Data
+
+@SecondCtrl = ($scope, Data) ->
+	$scope.data = Data
+	$scope.reversedMessage = (message) ->
+		message.split('').reverse().join('')
