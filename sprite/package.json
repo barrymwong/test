@@ -1,0 +1,30 @@
+{
+  "name": "sprite",
+  "version": "0.0.1",
+  "description": "sprite test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test-command"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barrymwong/test"
+  },
+  "author": "Barry",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/barrymwong/test/issues"
+  },
+  "homepage": "https://github.com/barrymwong/test",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "nodemon": "~0.7.10",
+    "connect": "~2.11.2",
+    "express": "~3.4.6",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-less": "~0.8.2",
+    "grunt-spritesmith": "~1.17.0",
+    "node-gyp": "~0.12.1",
+    "canvas": "~1.1.2"
+  }
+}

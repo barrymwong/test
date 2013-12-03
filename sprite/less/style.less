@@ -1,0 +1,39 @@
+// Include core (and @2x) sprite
+@import "sprites.less";
+@import "sprites@2x.less";
+
+
+// @2x Sprite helper
+// --------------------------------------------------
+.sprite-2x(@sprite2x, @sprite1x) {
+    .sprite(@sprite1x);
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+        .sprite(@sprite2x);
+        .sprite-position(@sprite1x);
+        .sprite-height(@sprite1x);
+        .sprite-width(@sprite1x);
+        .sprite-background-size(@sprite1x);
+    }
+}
+
+.sprite-background-size(@sprite) {
+    @total-width: ~`"@{sprite}".split(', ')[6]`;
+    @total-height: ~`"@{sprite}".split(', ')[7]`;
+    background-size: @total-width @total-height;
+}
+
+body {
+	background-color: #aaa;
+	.icon {
+		border:1px solid red;
+		display: inline-block;
+	}
+}
+
+.zoomout {
+    .sprite-2x(@zoomout-2x, @zoomout);
+}
+.zoomin {
+    .sprite-2x(@zoomin-2x, @zoomin);
+}

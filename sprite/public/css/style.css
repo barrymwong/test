@@ -1,0 +1,43 @@
+body {
+  background-color: #aaa;
+}
+body .icon {
+  border: 1px solid red;
+  display: inline-block;
+}
+.zoomout {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -222px;
+  width: 15px;
+  height: 15px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  .zoomout {
+    background-image: url(../images/sprite@2x.png);
+    background-position: 0px -347px;
+    width: 29px;
+    height: 29px;
+    background-position: 0px -222px;
+    height: 15px;
+    width: 15px;
+    background-size: 33px 477px;
+  }
+}
+.zoomin {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -206px;
+  width: 15px;
+  height: 15px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  .zoomin {
+    background-image: url(../images/sprite@2x.png);
+    background-position: 0px -316px;
+    width: 29px;
+    height: 29px;
+    background-position: 0px -206px;
+    height: 15px;
+    width: 15px;
+    background-size: 33px 477px;
+  }
+}
